@@ -1,7 +1,15 @@
-
 [user]
 	name = Zaraksh Rahman
 	email = zarakshR@pm.me
-[credential "https://github.com"]
-	helper = 
-	helper = !/usr/bin/gh auth git-credential
+[credential]
+	helper = cache
+[init]
+	defaultBranch = main
+[commit]
+	gpgSign = true
+[gpg]
+	program = gpg2
+
+[alias]
+    stash-all = stash save --include-untracked
+    changes = diff --name-only
