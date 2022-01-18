@@ -1,0 +1,16 @@
+:filetype plugin on
+:syntax off
+:set expandtab
+:set ts=4
+:set breakindent
+:set hlsearch
+:set incsearch
+:set lazyredraw
+:set showmatch
+:set foldenable
+:set foldlevelstart=20
+
+" Fold/unfold with space
+nnoremap <space> za
+
+:colorscheme delek
