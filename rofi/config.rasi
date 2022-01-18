@@ -1,0 +1,22 @@
+configuration {
+	modi: "drun,filebrowser";
+	font: "Inconsolata Black 16";
+	location: 2;
+	fixed-num-lines: false;
+	show-icons: true;
+	terminal: "alacritty";
+	drun-match-fields: "name,generic,exec,categories,keywords";
+	steal-focus: true;
+
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+
+  filebrowser {
+      directories-first: true;
+      sorting-method:    "name";
+  }
+}
+
+@theme "theme"

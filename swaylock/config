@@ -1,0 +1,12 @@
+image=/home/zaraksh/.config/sway/Wallpaper.jpg
+
+indicator-idle-visible
+
+text-clear-color=#ff000000
+text-ver-color=#ff000000
+text-wrong-color=#ff000000
+inside-clear-color=#BFBFBF
+ring-clear-color=#FFFFFF
+
+ignore-empty-password
+daemonize
