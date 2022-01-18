@@ -1,0 +1,22 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+. /usr/local/etc/.bash_aliases
+. /usr/share/git/completion/git-completion.bash
+
+alias code='cd /home/zaraksh/Documents/Code'
+alias svim='sudoedit'
+alias open='xdg-open'
+
+tmp() {
+	rand=$RANDOM
+	mkdir /tmp/$rand-mktmp
+	ln -s /tmp/$rand-mktmp .
+    cd ./$rand-mktmp
+}
+
+PS1='[\u@\h \w]\$ '

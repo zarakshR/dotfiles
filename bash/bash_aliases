@@ -1,0 +1,9 @@
+alias ls='ls --color=auto'
+alias ..='cd ..'
+alias back="cd $OLDPWD"
+alias py='ipython'
+alias mu='ncmpcpp'
+alias cim='vim'
+alias rm='mv -t $HOME/Trash/'
+alias del='command rm'
+alias sys='systemctl'

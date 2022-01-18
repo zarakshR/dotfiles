@@ -1,0 +1,12 @@
+#
+# ~/.bash_profile
+#
+
+export EDITOR=vim
+
+[[ -f ~/.bashrc ]] && . ~/.bashrc
+
+# Run sway if on tty0 and display available
+if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]; then
+	  exec sway
+fi
