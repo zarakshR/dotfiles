@@ -14,3 +14,4 @@
     changes = diff --name-only
     stashes = stash list
     go = add -u
+    ammend = commit --amend

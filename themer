@@ -1,0 +1,21 @@
+ALACRITTY_DIR="/home/zaraksh/.config/alacritty"
+SWAYWM_WALLPAPER_DIR="/home/zaraksh/.config/sway"
+
+if [ -z $1 ]
+then
+    echo "No theme specified"
+    exit 1
+fi
+
+# Alacritty
+# rm $ALACRITTY_DIR/alacritty.yml
+
+case $1 in
+    "dark") cat $ALACRITTY_DIR/alacritty-dark.yml > $ALACRITTY_DIR/alacritty.yml;
+            ln -sf $SWAYWM_WALLPAPER_DIR/wallpaper-dark.png $SWAYWM_WALLPAPER_DIR/wallpaper;;
+    "light") cat $ALACRITTY_DIR/alacritty-light.yml > $ALACRITTY_DIR/alacritty.yml
+             ln -sf $SWAYWM_WALLPAPER_DIR/wallpaper-light.png $SWAYWM_WALLPAPER_DIR/wallpaper;;
+    "*") 
+esac
+
+swaymsg reload
