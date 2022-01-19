@@ -11,5 +11,6 @@
 	program = gpg2
 
 [alias]
-    stash-all = stash save --include-untracked
     changes = diff --name-only
+    stashes = stash list
+    go = add -u
