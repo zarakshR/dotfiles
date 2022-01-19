@@ -22,7 +22,7 @@ hi ErrorMsg   ctermfg=White	   ctermbg=DarkRed  guibg=Red	    guifg=White
 hi FoldColumn ctermfg=DarkBlue	   ctermbg=Grey     guibg=Grey	    guifg=DarkBlue
 hi Folded     ctermbg=Grey	   ctermfg=DarkBlue guibg=LightGrey guifg=DarkBlue
 hi IncSearch  cterm=reverse	   gui=reverse
-hi LineNr     ctermfg=Brown	   guifg=Brown
+hi LineNr     ctermfg=DarkBlue  guifg=Brown
 hi ModeMsg    cterm=bold	   gui=bold
 hi MoreMsg    ctermfg=DarkGreen    gui=bold guifg=SeaGreen
 hi NonText    ctermfg=Blue	   gui=bold guifg=gray guibg=white
@@ -43,9 +43,10 @@ hi Visual     ctermbg=NONE	   cterm=reverse gui=reverse guifg=Grey guibg=fg
 hi VisualNOS  cterm=underline,bold gui=underline,bold
 hi WarningMsg ctermfg=DarkRed	   guifg=Red
 hi WildMenu   ctermfg=Black	   ctermbg=Yellow    guibg=Yellow guifg=Black
+hi ColorColumn ctermbg=LightCyan
 
 " syntax highlighting
-hi Comment    cterm=NONE ctermfg=DarkYellow ctermbg=DarkGrey gui=NONE guifg=red2
+hi Comment    cterm=bold,underline ctermfg=Yellow ctermbg=DarkGrey gui=NONE guifg=red2
 hi Constant   cterm=NONE ctermfg=DarkGreen   gui=NONE guifg=green3
 hi Identifier cterm=bold ctermfg=DarkBlue gui=NONE guifg=cyan4
 hi PreProc    cterm=bold ctermfg=DarkYellow gui=NONE guifg=magenta3

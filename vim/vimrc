@@ -14,3 +14,15 @@
 nnoremap <space> za
 
 :colorscheme light
+
+:function CommentedFileReader()
+    :hi Normal ctermbg=DarkGrey
+    :hi LineNr ctermfg=Cyan
+    :hi ColorColumn ctermbg=Yellow
+:endfunction
+
+:function CommentedFileReader_Undo()
+    :hi Normal ctermbg=None
+    :hi LineNr ctermfg=DarkBlue
+    :hi ColorColumn ctermbg=Yellow
+:endfunction
