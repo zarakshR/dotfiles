@@ -13,4 +13,4 @@
 " Fold/unfold with space
 nnoremap <space> za
 
-:colorscheme delek
+:colorscheme light
