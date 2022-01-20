@@ -15,3 +15,5 @@
     stashes = stash list
     go = add -u
     ammend = commit --amend
+[core]
+	excludesFile = /home/zaraksh/.config/git/gitignore

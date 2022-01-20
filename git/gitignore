@@ -1,0 +1,5 @@
+*.note
+*.sqbpro
+*.sqlite
+*.sqlite.bkp
+__pycache__/

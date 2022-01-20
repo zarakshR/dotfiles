@@ -5,7 +5,7 @@
 
 hi clear
 
-let g:colors_name = "light"
+let g:colors_name = "colors"
 
 " Normal should come first
 hi Normal     guifg=Black  guibg=White
@@ -46,7 +46,7 @@ hi WildMenu   ctermfg=Black	   ctermbg=Yellow    guibg=Yellow guifg=Black
 hi ColorColumn ctermbg=LightCyan
 
 " syntax highlighting
-hi Comment    cterm=bold,underline ctermfg=Yellow ctermbg=DarkGrey gui=NONE guifg=red2
+hi Comment    cterm=bold ctermfg=Yellow ctermbg=238 gui=NONE guifg=red2
 hi Constant   cterm=NONE ctermfg=DarkGreen   gui=NONE guifg=green3
 hi Identifier cterm=bold ctermfg=DarkBlue gui=NONE guifg=cyan4
 hi PreProc    cterm=bold ctermfg=DarkYellow gui=NONE guifg=magenta3

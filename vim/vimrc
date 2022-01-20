@@ -13,7 +13,7 @@
 " Fold/unfold with space
 nnoremap <space> za
 
-:colorscheme light
+:colorscheme colors
 
 :function CommentedFileReader()
     :hi Normal ctermbg=DarkGrey
