@@ -245,7 +245,7 @@ bar {
 
 default_border pixel 4
 
-#gaps inner 13
+gaps inner 5
 #gaps outer 15
 
 include /etc/sway/config.d/*

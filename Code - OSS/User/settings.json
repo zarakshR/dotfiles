@@ -1,0 +1,16 @@
+{
+    "editor.fontFamily": "Inconsolata SemiBold",
+    "editor.fontSize": 18,
+    "terminal.integrated.fontFamily": "Inconsolata SemiBold",
+    "terminal.integrated.fontSize": 16,
+    "workbench.colorTheme": "Classic Terminal",
+    "window.menuBarVisibility": "toggle",
+    "files.insertFinalNewline": true,
+    
+    "[python]": {
+        "editor.rulers": [130],
+    },
+    "[c]": {
+        "editor.rulers": [80]
+    }
+}
