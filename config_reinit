@@ -1,0 +1,13 @@
+rm -f ~/.config/bash/*
+ln ~/.bash_profile ~/.config/bash/bash_profile
+ln ~/.bashrc ~/.config/bash/bashrc
+sudo ln /usr/local/etc/.bash_aliases ~/.config/bash/bash_aliases
+
+
+rm ~/.config/vim/vimrc
+rm -f ~/.config/vim/colors/*
+rm -rf ~/.config/vim/ftplugin/*
+rm -f ~/.config/vim/colors/*
+ln ~/.vim/colors/colors.vim ~/.config/vim/colors/colors.vim
+ln ~/.vim/ftplugin/* ~/.config/vim/ftplugin/
+ln ~/.vimrc  ~/.config/vim/vimrc

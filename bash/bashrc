@@ -14,7 +14,6 @@ alias code='cd /home/zaraksh/Documents/Code'
 alias docs='cd /home/zaraksh/Documents'
 alias svim='sudoedit'
 alias open='xdg-open'
-alias gitpass='pass show git-pat | wl-copy'
 
 tmp() {
 	rand=$RANDOM

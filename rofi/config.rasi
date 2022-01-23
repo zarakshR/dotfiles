@@ -14,6 +14,7 @@ configuration {
   }
 
   filebrowser {
+      directory: "/home/zaraksh";
       directories-first: true;
       sorting-method:    "name";
   }
