@@ -2,4 +2,3 @@ news.version=2.6.0
 include light-256.theme
 context.code.read=+code
 context.code.write=+code
-context=code

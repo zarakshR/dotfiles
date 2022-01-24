@@ -140,3 +140,4 @@ prompt {
 entry {
     text-color: #F5F5F5;
 }
+element-icon { size: 4.00ch ; }

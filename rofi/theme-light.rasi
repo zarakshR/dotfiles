@@ -134,3 +134,4 @@ error-message {
     background-color: #FF8888;
     text-color: @back;
 }
+element-icon { size: 4.00ch ; }

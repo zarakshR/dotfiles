@@ -15,7 +15,7 @@ exec dunst
 # Make sure monitors are arranged properly
 
 output HDMI-A-1 pos 1920 0
-output eDP-1 pos 0 540
+output eDP-1 pos 540 1080
 
 ### Variables
 
@@ -67,8 +67,8 @@ bindsym --locked XF86MonBrightnessUp exec light -A 1
 bindsym --locked XF86MonBrightnessDown exec light -U 1
 
 # Increase/Decrease volume and mute
-bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
-bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +2%
+bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -2%
 bindsym --locked XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 # mpc controls
@@ -151,6 +151,7 @@ bindsym $mod+Shift+7 move container to workspace number 7
 bindsym $mod+Shift+8 move container to workspace number 8
 bindsym $mod+Shift+9 move container to workspace number 9
 bindsym $mod+Shift+0 move container to workspace number 10
+bindsym $mod+Shift+grave move container to workspace number 10
 
 # Note: workspaces can have any name you want, not just numbers.
 
@@ -235,9 +236,12 @@ bar {
 
 # Appearance:
 
-default_border pixel 6
+default_border none
 
 gaps inner 8
 #gaps outer 15
+
+# class        border  backgr. text    indicator child_border
+client.focused #ff0000 #ff0000 #ff0000 #AF0000   #AF0000
 
 include /etc/sway/config.d/*

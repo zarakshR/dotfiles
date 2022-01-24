@@ -8,6 +8,7 @@
 . /usr/local/etc/.bash_aliases
 . /usr/share/git/completion/git-completion.bash
 . /usr/share/git/completion/git-prompt.sh
+
 GIT_PS1_SHOWDIRTYSTATE=1 #This shows dirty/clean status on the git prompt
 
 alias code='cd /home/zaraksh/Documents/Code'

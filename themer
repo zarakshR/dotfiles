@@ -1,5 +1,5 @@
 ALACRITTY_DIR="/home/zaraksh/.config/alacritty"
-SWAYWM_WALLPAPER_DIR="/home/zaraksh/.config/sway"
+WALLPAPER_DIR="/home/zaraksh/.config/wallpapers"
 NCMPCPP_DIR="/home/zaraksh/.config/ncmpcpp"
 ROFI_DIR="/home/zaraksh/.config/rofi"
 
@@ -14,11 +14,11 @@ fi
 
 case $1 in
     "dark") cat $ALACRITTY_DIR/alacritty-dark.yml > $ALACRITTY_DIR/alacritty.yml;
-            ln -sf $SWAYWM_WALLPAPER_DIR/wallpaper-dark.png $SWAYWM_WALLPAPER_DIR/wallpaper;
+            ln -sf $WALLPAPER_DIR/wallpaper-dark.png $WALLPAPER_DIR/wallpaper;
             ln -sf $NCMPCPP_DIR/config-dark $NCMPCPP_DIR/config;
             ln -sf $ROFI_DIR/theme-dark.rasi $ROFI_DIR/theme.rasi;;
     "light") cat $ALACRITTY_DIR/alacritty-light.yml > $ALACRITTY_DIR/alacritty.yml
-             ln -sf $SWAYWM_WALLPAPER_DIR/wallpaper-light.png $SWAYWM_WALLPAPER_DIR/wallpaper;
+             ln -sf $WALLPAPER_DIR/wallpaper-light.png $WALLPAPER_DIR/wallpaper;
              ln -sf $NCMPCPP_DIR/config-light $NCMPCPP_DIR/config;
              ln -sf $ROFI_DIR/theme-light.rasi $ROFI_DIR/theme.rasi;;
     "*") 

@@ -3,7 +3,8 @@
     "editor.fontSize": 18,
     "terminal.integrated.fontFamily": "Inconsolata SemiBold",
     "terminal.integrated.fontSize": 16,
-    "workbench.colorTheme": "Classic Terminal",
+    "terminal.integrated.allowChords": false, // Let's us use Ctrl-K and shit in terminals
+    "workbench.colorTheme": "Visual Studio Light",
     "window.menuBarVisibility": "toggle",
     "files.insertFinalNewline": true,
     
@@ -11,6 +12,16 @@
         "editor.rulers": [130],
     },
     "[c]": {
-        "editor.rulers": [80]
-    }
+        "editor.rulers": [
+            80
+        ],
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "[latex]": {
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 130
+    },
+    "latex-workshop.view.pdf.viewer": "browser",
+    "explorer.confirmDelete": true,
+    "C_Cpp.clang_format_fallbackStyle": "Chromium"
 }
