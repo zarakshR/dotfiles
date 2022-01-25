@@ -9,11 +9,11 @@
 	gpgSign = true
 [gpg]
 	program = gpg2
-
 [alias]
     changes = diff --name-only
     stashes = stash list
     go = add -u
     ammend = commit --amend
+    patch = add --patch
 [core]
 	excludesFile = /home/zaraksh/.config/git/gitignore

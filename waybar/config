@@ -13,19 +13,14 @@
 
     // Modules configuration
     "sway/workspaces": {
-        "disable-scroll": false,
+        "disable-scroll": true,
         "all-outputs": false,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
+         "format": "{name}",
+         "format-icons": {
+             "10": "",
+             "urgent": "",
+             "focused": "",
+         }
     },
     "idle_inhibitor": {
         "format": "{icon}",
@@ -44,7 +39,7 @@
         "tooltip": false
     },
     "memory": {
-        "format": "{}% "
+        "format": "{}% "
     },
     "temperature": {
         "thermal-zone": 7,

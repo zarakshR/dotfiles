@@ -43,15 +43,15 @@ hi Visual     ctermbg=NONE	   cterm=reverse gui=reverse guifg=Grey guibg=fg
 hi VisualNOS  cterm=underline,bold gui=underline,bold
 hi WarningMsg ctermfg=DarkRed	   guifg=Red
 hi WildMenu   ctermfg=Black	   ctermbg=Yellow    guibg=Yellow guifg=Black
-hi ColorColumn ctermbg=LightCyan
+hi ColorColumn ctermbg=110
 
 " syntax highlighting
-hi Comment    cterm=bold ctermfg=Yellow ctermbg=238 gui=NONE guifg=red2
+hi Comment    cterm=NONE ctermfg=DarkMagenta ctermbg=NONE gui=NONE guifg=red2
 hi Constant   cterm=NONE ctermfg=DarkGreen   gui=NONE guifg=green3
 hi Identifier cterm=bold ctermfg=DarkBlue gui=NONE guifg=cyan4
-hi PreProc    cterm=bold ctermfg=DarkYellow gui=NONE guifg=magenta3
+hi PreProc    cterm=bold ctermfg=90 gui=NONE guifg=magenta3
 hi Special    cterm=NONE ctermfg=DarkRed    gui=NONE guifg=deeppink
 hi Statement  cterm=bold ctermfg=Blue	     gui=bold guifg=blue
-hi Type	      cterm=NONE ctermfg=Blue	     gui=bold guifg=blue
+hi Type	      cterm=NONE ctermfg=DarkRed gui=bold guifg=blue
 
 " vim: sw=2

@@ -1,3 +1,8 @@
+#! /usr/bin/python
+
+# This assumes that "swaymsg -rt get_workspaces" returns workspaces in the order they are
+# arranged
+
 import json
 import subprocess
 from sys import argv
@@ -8,22 +13,16 @@ json = json.loads(obj.stdout.decode("utf-8").replace("\n", ""))
 wspaces = []
 
 for wspace in json:
-    wspaces.append(wspace["num"])
+    wspaces.append(wspace["name"])
     if wspace["focused"] is True:
         focussed_wspace = wspace
 
 for x in range(len(wspaces)):
-	# print(x, "-->", wspaces[x])
-	if wspaces[x] == focussed_wspace["num"]:
-		if argv[1] == "n":
-			y = x+1
-			if y == len(wspaces):
-				print(wspaces[0])
-			else:
-				print(wspaces[y])
-		elif argv[1] == "p":
-			y = x-1
-			if y == -1:
-				print(wspaces[len(wspaces)-1])
-			else:
-				print(wspaces[y])
+    if wspaces[x] == focussed_wspace["name"]:
+        if argv[1] == "n" and x is (len(wspaces)-1):
+            print(wspaces[0])
+        elif argv[1] == "n":
+            print(wspaces[x+1])
+        elif argv[1] == "p":
+            t = 2
+            print(wspaces[x-1])
