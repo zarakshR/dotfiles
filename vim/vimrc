@@ -26,3 +26,13 @@ nnoremap <space> za
     :hi LineNr ctermfg=DarkBlue
     :hi ColorColumn ctermbg=Yellow
 :endfunction
+
+" Keybindings
+
+imap <C-e> <esc>$a
+imap <C-a> <esc>0i
+
+map zz :q!<cr>
+map zx :wq<cr>
+
+map <C-k> "_dd
