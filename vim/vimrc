@@ -10,9 +10,6 @@
 :set foldenable
 :set foldlevelstart=20
 
-" Fold/unfold with space
-nnoremap <space> za
-
 :colorscheme colors
 
 :function CommentedFileReader()
@@ -29,10 +26,13 @@ nnoremap <space> za
 
 " Keybindings
 
+" Emacs-like move to start/end of line in insert mode
 imap <C-e> <esc>$a
 imap <C-a> <esc>0i
 
+" Quick exists
 map zz :q!<cr>
 map zx :wq<cr>
 
+" Delete line without copying it to a register
 map <C-k> "_dd

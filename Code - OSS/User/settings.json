@@ -1,31 +1,110 @@
 {
     "editor.fontFamily": "Inconsolata SemiBold",
-    "editor.fontSize": 18,
     "terminal.integrated.fontFamily": "Inconsolata SemiBold",
+
+    "editor.fontSize": 18,
     "terminal.integrated.fontSize": 16,
+
     "terminal.integrated.allowChords": false,
+
     "window.menuBarVisibility": "toggle",
+    "workbench.editor.showTabs": false,
+    "workbench.panel.defaultLocation": "right",
+    "explorer.confirmDelete": true,
+    "window.zoomLevel": -0.7,
+    
     "files.insertFinalNewline": true,
     
     "[python]": {
-        "editor.rulers": [130],
+        "editor.rulers": [
+            130
+        ],
     },
     "[c]": {
         "editor.rulers": [
             80
         ],
-        "editor.defaultFormatter": "ms-vscode.cpptools"
     },
     "[latex]": {
         "editor.wordWrap": "wordWrapColumn",
         "editor.wordWrapColumn": 130
     },
+    
     "latex-workshop.view.pdf.viewer": "browser",
-    "explorer.confirmDelete": true,
-    "C_Cpp.clang_format_fallbackStyle": "Chromium",
+
     "C_Cpp.clang_format_style": "Chromium",
-    "workbench.colorTheme": "Default Light+",
+    "C_Cpp.autocompleteAddParentheses": true,
+    
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.panel.defaultLocation": "right",
-    "terminal.external.linuxExec": "alacritty"
+    "workbench.colorCustomizations": {
+        "[Default Light+]": {
+            "editor.background": "#f5f5f5",
+            "editor.foreground": "#000000",
+            "sideBar.background": "#EAEAEA",
+            "sideBar.foreground": "#121212",
+            "sideBarSectionHeader.foreground": "#002440",
+            "activityBar.background": "#CCCCCC",
+            "activityBar.foreground": "#003A66",
+            "panel.background": "#eaeaea",
+            "statusBar.background": "#002440",
+            "statusBar.debuggingBackground": "#E67137",
+            "statusBar.debuggingForeground": "#121212",
+            "statusBar.noFolderBackground": "#82B0CC",
+            "statusBar.noFolderForeground": "#121212",
+            "banner.background": "#FFD662",
+            "banner.foreground": "#121212",
+            "selection.background": "#C4FFFD",
+            "badge.background": "#003a66",
+            "badge.foreground": "#f5f5f5",
+            "gitDecoration.untrackedResourceForeground": "#6B0C54",
+            "gitDecoration.deletedResourceForeground": "#ed0000",
+            "gitDecoration.modifiedResourceForeground": "#003A66",
+            "gitDecoration.addedResourceForeground": "#008700",
+        },
+        "[Default Dark+]": {
+            "editor.background": "#000",
+            "editor.foreground": "#f5f5f5",
+            "sideBar.background": "#0a0a0a",
+            "sideBar.foreground": "#eaeaea",
+            "sideBarSectionHeader.foreground": "#407490",
+            "activityBar.background": "#121212",
+            "activityBar.foreground": "#0091FF",
+            "panel.background": "#0a0a0a",
+            "statusBar.background": "#002440",
+            "statusBar.debuggingBackground": "#E67137",
+            "statusBar.debuggingForeground": "#121212",
+            "statusBar.noFolderBackground": "#099AB8",
+            "statusBar.noFolderForeground": "#121212",
+            "banner.background": "#FFD662",
+            "banner.foreground": "#121212",
+            "selection.background": "#054D5C",
+            "badge.background": "#003a66",
+            "badge.foreground": "#f5f5f5",
+            "gitDecoration.untrackedResourceForeground": "#6B0C54",
+            "gitDecoration.deletedResourceForeground": "#ed0000",
+            "gitDecoration.modifiedResourceForeground": "#003A66",
+            "gitDecoration.addedResourceForeground": "#008700",
+        }
+    },
+    "editor.tokenColorCustomizations": {
+        "[Default Light+]": {
+            "comments": "#777",
+            "functions": "#BD0000",
+            "keywords": "#8A57CF",
+            "types": "#0091FF",
+            "variables": "#003A66",
+            "numbers": "#121212",
+            "strings": "#008D00",
+        },
+        "[Default Dark+]": {
+            "comments": "#555",
+            "functions": "#DF2020",
+            "keywords": "#B955E6",
+            "types": "#4C5EE6",
+            "variables": "#53ABD9",
+            "numbers": "#eaeaea",
+            "strings": "#008D00",
+        }
+    },
+    "workbench.colorTheme": "Default Light+",
 }

@@ -23,6 +23,10 @@ tmp() {
     cd ./$rand-mktmp
 }
 
+shortps1() {
+    PS1="[\W]_$ "
+}
+
 PS1='[\u@\h \w]$(__git_ps1 "  (%s)")_ '
 
 # This allows gpg signing for git
