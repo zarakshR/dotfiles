@@ -47,5 +47,9 @@
     {
         "key": "ctrl+numpad2",
         "command": "workbench.action.duplicateActiveEditorGroupDown"
+    },
+    {
+        "key": "shift+v",
+        "command": "toggleVim"
     }
 ]

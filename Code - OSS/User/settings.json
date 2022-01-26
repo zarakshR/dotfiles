@@ -2,6 +2,10 @@
     "editor.fontFamily": "Inconsolata SemiBold",
     "terminal.integrated.fontFamily": "Inconsolata SemiBold",
     "editor.fontSize": 18,
+    "editor.cursorStyle": "line",
+    "editor.cursorSurroundingLines": 2,
+    "editor.cursorWidth": 3,
+    "editor.cursorBlinking": "solid",
     "terminal.integrated.fontSize": 16,
     "terminal.integrated.allowChords": false,
     "window.menuBarVisibility": "toggle",
@@ -9,6 +13,14 @@
     "explorer.confirmDelete": true,
     "window.zoomLevel": -0.7,
     "files.insertFinalNewline": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "zenMode.restore": false,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideStatusBar": false,
+    "vim.vimrc.path": "~/.vimrc",
     "[python]": {
         "editor.rulers": [
             130
@@ -27,6 +39,7 @@
     "C_Cpp.clang_format_style": "Chromium",
     "C_Cpp.autocompleteAddParentheses": true,
     "workbench.iconTheme": "material-icon-theme",
+    // "window.autoDetectColorScheme": true,
     "git.decorations.enabled": false,
     "workbench.colorCustomizations": {
         "[Default Light+]": {
@@ -58,7 +71,7 @@
             "editorGroupHeader.tabsBackground": "#eaeaea"
         },
         "[Default Dark+]": {
-            "editor.background": "#000",
+            "editor.background": "#000000",
             "editor.foreground": "#f5f5f5",
             "sideBar.background": "#0a0a0a",
             "sideBar.foreground": "#eaeaea",
@@ -106,4 +119,5 @@
             "strings": "#008D00",
         }
     },
+    "workbench.colorTheme": "Default Light+",
 }
