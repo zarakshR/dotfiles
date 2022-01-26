@@ -182,8 +182,8 @@ draw_bold_text_with_bright_colors: false
 colors:
   # Default colors
   primary:
-    background: '#F5F5F5'
-    foreground: '#0A0A0A'
+    background: '#0a0a0a'
+    foreground: '#F5F5F5'
 
     # Bright and dim foreground colors
     #
@@ -410,7 +410,7 @@ colors:
   #thickness: 0.15
 
 # Live config reload (changes require restart)
-#live_config_reload: true
+live_config_reload: true
 
 # Shell
 #
