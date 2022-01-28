@@ -27,7 +27,11 @@ shortps1() {
     PS1="[\W]_$ "
 }
 
-PS1='[\u@\h \w]$(__git_ps1 "  (%s)")_ '
+longps1() {
+    PS1='[\u@\h \w]$(__git_ps1 "  (%s)")_ '
+}
+
+longps1
 
 # This allows gpg signing for git
 export GPG_TTY=$(tty)

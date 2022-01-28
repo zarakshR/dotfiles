@@ -12,4 +12,13 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
+	"Print Byte": {
+		"prefix": "pbyte",
+		"body": "printf(\"%02x\", ${1:byte});",
+		"description": "Prints the Hex Representation of a Byte"
+	},
+	"typedef a struct": {
+		"prefix": "oop",
+		"body": "typedef struct _${1:Object} {\n\t${2:/*Code*/}\n} ${1:Object};\n\n"
+	}
 }

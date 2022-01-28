@@ -17,7 +17,7 @@ exec dunst
 # Make sure monitors are arranged properly
 
 output HDMI-A-1 pos 1920 0
-output eDP-1 pos 540 1080
+output eDP-1 pos 0 350
 
 ### Variables
 

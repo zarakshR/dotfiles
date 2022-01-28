@@ -49,7 +49,7 @@
         "command": "workbench.action.duplicateActiveEditorGroupDown"
     },
     {
-        "key": "shift+v",
-        "command": "toggleVim"
+        "key": "ctrl+t",
+        "command": "openEditors.newUntitledFile"
     }
 ]
