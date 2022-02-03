@@ -3,7 +3,7 @@
 
 # Start some scripts
 
-exec swaymsg "workspace ; exec firefox;"
+exec swaymsg "workspace ; exec MOZ_ENABLE_WAYLAND=1 firefox;"
 
 # Flash windows when switching focus - starts flashfocus
 exec "systemctl --user import-environment; systemctl --user start sway-session.target"
@@ -18,6 +18,11 @@ exec dunst
 
 output HDMI-A-1 pos 1920 0
 output eDP-1 pos 0 350
+
+# Make sure proton mail bridge and pavucontrol are always floating
+for_window [app_id="proton-bridge"] floating enable, resize set 1000 800
+for_window [app_id="pavucontrol"] floating enable, resize set 1000 800
+for_window [class="Thunderbird" title="Instant messaging status"] floating enable, resize set 1000 800
 
 ### Variables
 

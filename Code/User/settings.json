@@ -1,50 +1,80 @@
 {
+    // EDITOR ---
+    "editor.guides.bracketPairs": true,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.snippetSuggestions": "top",
+    // Font
     "editor.fontFamily": "Inconsolata SemiBold",
-    "terminal.integrated.fontFamily": "Inconsolata SemiBold",
     "editor.fontSize": 18,
+    "editor.fontLigatures": false,
+    // Cursor
     "editor.cursorStyle": "line",
     "editor.cursorSurroundingLines": 2,
     "editor.cursorWidth": 3,
     "editor.cursorBlinking": "solid",
-    "terminal.integrated.fontSize": 16,
-    "terminal.integrated.allowChords": false,
-    // "window.titleBarStyle": "custom",
-    "window.menuBarVisibility": "toggle",
-    "workbench.panel.defaultLocation": "right",
-    "explorer.confirmDelete": true,
-    "window.zoomLevel": -0.7,
-    "files.insertFinalNewline": true,
+    // Word wrapping
+    "editor.rulers": [
+        80
+    ],
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 130,
+    // Formatting
     "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
-    "editor.guides.bracketPairs": true,
+    // Zen mode
     "zenMode.restore": false,
     "zenMode.hideLineNumbers": false,
     "zenMode.hideStatusBar": false,
     "zenMode.hideTabs": false,
     "zenMode.centerLayout": false,
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "editor.snippetSuggestions": "top",
+    // ---
+    // FILES ---
+    "files.autoSave": "onFocusChange",
+    "files.insertFinalNewline": true,
+    "files.defaultLanguage": "${activeEditorLanguage}",
+    "files.trimTrailingWhitespace": true,
+    // TERMINAL ---
+    "terminal.integrated.fontFamily": "Inconsolata SemiBold",
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.allowChords": false,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.tabs.enabled": true,
+    // WINDOW & WORKBENCH ---
+    "window.title": "${dirty}${activeEditorShort}",
+    "window.menuBarVisibility": "toggle",
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.panel.defaultLocation": "right",
+    "workbench.startupEditor": "welcomePageInEmptyWorkbench",
+    "explorer.confirmDelete": true,
+    // ---
+    // LANGUAGE SPECIFIC CONFIGURATION ---
     "[python]": {
+        "editor.bracketPairColorization.enabled": true,
         "editor.rulers": [
-            130
+            110
         ],
     },
-    "[c]": {
-        "editor.rulers": [
-            80
-        ],
+    // Filetype-editor associations
+    "workbench.editorAssociations": {
+        "*.wav": "hexEditor.hexedit"
     },
-    "[latex]": {
-        "editor.wordWrap": "wordWrapColumn",
-        "editor.wordWrapColumn": 130
-    },
+    // ---
+    // EXTENSIONS ---
+    // Microsoft™ C/C++ Extension ---
     "C_Cpp.autocompleteAddParentheses": true,
     "C_Cpp.clang_format_style": "file",
-    // "window.autoDetectColorScheme": true,
+    "C_Cpp.clang_format_fallbackStyle": "Google",
+    // Microsoft™ Hex Editor Extension ---
+    "hexeditor.columnWidth": 16,
+    "hexeditor.showDecodedText": true,
+    "hexeditor.dataInspector.autoReveal": false,
+    // ---
+    // APPEARANCE ---
     "git.decorations.enabled": false,
+    // Colour schemes
     "workbench.colorCustomizations": {
+        // Light theme
         "[Default Light+]": {
             "editor.background": "#f5f5f5",
             "editor.foreground": "#000000",
@@ -72,8 +102,9 @@
             "tab.activeBackground": "#f5f5f5",
             "tab.inactiveBackground": "#f5f5f5",
             "tab.activeBorder": "#0091FF",
-            "editorGroupHeader.tabsBackground": "#eaeaea"
+            "editorGroupHeader.tabsBackground": "#eaeaea",
         },
+        // Dark theme
         "[Default Dark+]": {
             "editor.background": "#000000",
             "editor.foreground": "#f5f5f5",
@@ -100,10 +131,12 @@
             "tab.activeBackground": "#0a0a0a",
             "tab.inactiveBackground": "#0a0a0a",
             "tab.activeBorder": "#0091FF",
-            "editorGroupHeader.tabsBackground": "#121212"
+            "editorGroupHeader.tabsBackground": "#121212",
         }
     },
+    // Syntax colouring
     "editor.tokenColorCustomizations": {
+        // Light theme
         "[Default Light+]": {
             "comments": "#777",
             "functions": "#D50000",
@@ -113,6 +146,7 @@
             "numbers": "#121212",
             "strings": "#008A00",
         },
+        // Dark theme
         "[Default Dark+]": {
             "comments": "#555",
             "functions": "#bf616a",
@@ -123,6 +157,8 @@
             "strings": "#a3be8c",
         }
     },
-    "workbench.colorTheme": "Default Light+",
     "workbench.iconTheme": "material-icon-theme",
+    "editor.renderWhitespace": "none",
+    "window.zoomLevel": -0.7,
+    "python.formatting.provider": "black",
 }

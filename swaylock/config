@@ -1,6 +1,7 @@
 image=/home/zaraksh/.config/wallpapers/wallpaper
 
 indicator-idle-visible
+no-unlock-indicator
 
 text-clear-color=#ff000000
 text-ver-color=#ff000000

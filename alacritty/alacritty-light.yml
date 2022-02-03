@@ -278,7 +278,7 @@ colors:
     blue:    '#005F87'
     magenta: '#BD0F4F'
     cyan:    '#5BC0BE'
-    white:   '#FCFCFC'
+    white:   '#F5F5F5'
 
   # Bright colors
   bright:

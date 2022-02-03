@@ -51,5 +51,33 @@
     {
         "key": "ctrl+t",
         "command": "openEditors.newUntitledFile"
+    },
+    {
+        "key": "ctrl+shift+x",
+        "command": "hexEditor.dataInspectorView.focus"
+    },
+    {
+        "key": "ctrl+shift+x",
+        "command": "-workbench.view.extensions",
+        "when": "viewContainer.workbench.view.extensions.enabled"
+    },
+    {
+        "key": "alt+x",
+        "command": "hexEditor.openFile"
+    },
+    {
+        "key": "shift+alt+w",
+        "command": "editor.debug.action.selectionToWatch"
+    },
+    {
+        "key": "ctrl+shift+alt+b",
+        "command": "workbench.action.tasks.reRunTask"
+    },
+    {
+        "key": "alt+`",
+        "command": "type",
+        "args": {
+            "text": "`"
+        }
     }
 ]
