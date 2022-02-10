@@ -6,7 +6,7 @@
     // Font
     "editor.fontFamily": "Inconsolata SemiBold",
     "editor.fontSize": 18,
-    "editor.fontLigatures": false,
+    // "editor.fontLigatures": false,
     // Cursor
     "editor.cursorStyle": "line",
     "editor.cursorSurroundingLines": 2,
@@ -34,6 +34,7 @@
     "files.insertFinalNewline": true,
     "files.defaultLanguage": "${activeEditorLanguage}",
     "files.trimTrailingWhitespace": true,
+    "explorer.confirmDelete": true,
     // TERMINAL ---
     "terminal.integrated.fontFamily": "Inconsolata SemiBold",
     "terminal.integrated.fontSize": 16,
@@ -44,16 +45,12 @@
     "window.title": "${dirty}${activeEditorShort}",
     "window.menuBarVisibility": "toggle",
     "workbench.editor.highlightModifiedTabs": true,
-    "workbench.panel.defaultLocation": "right",
     "workbench.startupEditor": "welcomePageInEmptyWorkbench",
-    "explorer.confirmDelete": true,
     // ---
     // LANGUAGE SPECIFIC CONFIGURATION ---
     "[python]": {
         "editor.bracketPairColorization.enabled": true,
-        "editor.rulers": [
-            110
-        ],
+        "editor.defaultFormatter": "ms-python.python",
     },
     // Filetype-editor associations
     "workbench.editorAssociations": {
@@ -157,8 +154,12 @@
             "strings": "#a3be8c",
         }
     },
-    "workbench.iconTheme": "material-icon-theme",
     "editor.renderWhitespace": "none",
     "window.zoomLevel": -0.7,
     "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length=80"
+    ],
+    "python.analysis.completeFunctionParens": true,
+    "workbench.colorTheme": "Default Light+",
 }

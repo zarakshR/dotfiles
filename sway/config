@@ -20,9 +20,9 @@ output HDMI-A-1 pos 1920 0
 output eDP-1 pos 0 350
 
 # Make sure proton mail bridge and pavucontrol are always floating
-for_window [app_id="proton-bridge"] floating enable, resize set 1000 800
-for_window [app_id="pavucontrol"] floating enable, resize set 1000 800
-for_window [class="Thunderbird" title="Instant messaging status"] floating enable, resize set 1000 800
+for_window [app_id="proton-bridge"] floating enable, resize set 1200 800
+for_window [app_id="pavucontrol"] floating enable, resize set 1200 800
+for_window [class="Thunderbird" title="Instant messaging status"] floating enable, resize set 800 400
 
 ### Variables
 
@@ -244,6 +244,7 @@ bar {
 # Appearance:
 
 default_border none
+default_floating_border pixel 6
 
 gaps inner 8
 #gaps outer 15

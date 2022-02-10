@@ -2,25 +2,15 @@
 [
     {
         "key": "ctrl+tab",
-        "command": "-workbench.action.quickOpenNavigateNextInEditorPicker",
-        "when": "inEditorsPicker && inQuickOpen"
-    },
-    {
-        "key": "ctrl+shift+tab",
-        "command": "-workbench.action.quickOpenNavigatePreviousInEditorPicker",
-        "when": "inEditorsPicker && inQuickOpen"
-    },
-    {
-        "key": "ctrl+tab",
         "command": "workbench.action.nextEditor"
-    },
-    {
-        "key": "ctrl+pagedown",
-        "command": "-workbench.action.nextEditor"
     },
     {
         "key": "ctrl+shift+tab",
         "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "ctrl+pagedown",
+        "command": "-workbench.action.nextEditor"
     },
     {
         "key": "ctrl+pageup",
@@ -28,16 +18,11 @@
     },
     {
         "key": "ctrl+alt+`",
-        "command": "workbench.panel.output.focus"
+        "command": "workbench.action.togglePanel"
     },
     {
         "key": "`",
         "command": "workbench.action.terminal.toggleTerminal",
-        "when": "terminal.active"
-    },
-    {
-        "key": "ctrl+`",
-        "command": "-workbench.action.terminal.toggleTerminal",
         "when": "terminal.active"
     },
     {
@@ -47,19 +32,6 @@
     {
         "key": "ctrl+numpad2",
         "command": "workbench.action.duplicateActiveEditorGroupDown"
-    },
-    {
-        "key": "ctrl+t",
-        "command": "openEditors.newUntitledFile"
-    },
-    {
-        "key": "ctrl+shift+x",
-        "command": "hexEditor.dataInspectorView.focus"
-    },
-    {
-        "key": "ctrl+shift+x",
-        "command": "-workbench.view.extensions",
-        "when": "viewContainer.workbench.view.extensions.enabled"
     },
     {
         "key": "alt+x",
