@@ -15,6 +15,7 @@ alias code='cd /home/zaraksh/Documents/Code'
 alias docs='cd /home/zaraksh/Documents'
 alias svim='sudoedit'
 alias open='xdg-open'
+alias fulls='ls -lh --color=auto -a --group-directories-first'
 
 tmp() {
 	rand=$RANDOM

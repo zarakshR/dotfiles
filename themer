@@ -2,6 +2,7 @@ ALACRITTY_DIR="/home/zaraksh/.config/alacritty"
 WALLPAPER_DIR="/home/zaraksh/.config/wallpapers"
 NCMPCPP_DIR="/home/zaraksh/.config/ncmpcpp"
 ROFI_DIR="/home/zaraksh/.config/rofi"
+VSCODE_DIR="/home/zaraksh/.config/Code/User"
 
 if [ -z $1 ]
 then
@@ -13,17 +14,22 @@ fi
 # rm $ALACRITTY_DIR/alacritty.yml
 
 case $1 in
+
     "dark") cat $ALACRITTY_DIR/alacritty-dark.yml > $ALACRITTY_DIR/alacritty.yml;
             ln -sf $WALLPAPER_DIR/wallpaper-dark.png $WALLPAPER_DIR/wallpaper;
             ln -sf $NCMPCPP_DIR/config-dark $NCMPCPP_DIR/config;
             ln -sf $ROFI_DIR/theme-dark.rasi $ROFI_DIR/theme.rasi;
+            sed -i 's/"workbench.colorTheme": "Default Light+",/"workbench.colorTheme": "Default Dark+",/' $VSCODE_DIR/settings.json
             gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark";;
+
     "light") cat $ALACRITTY_DIR/alacritty-light.yml > $ALACRITTY_DIR/alacritty.yml
              ln -sf $WALLPAPER_DIR/wallpaper-light.png $WALLPAPER_DIR/wallpaper;
              ln -sf $NCMPCPP_DIR/config-light $NCMPCPP_DIR/config;
              ln -sf $ROFI_DIR/theme-light.rasi $ROFI_DIR/theme.rasi;
+             sed -i 's/"workbench.colorTheme": "Default Dark+",/"workbench.colorTheme": "Default Light+",/' $VSCODE_DIR/settings.json
              gsettings set org.gnome.desktop.interface gtk-theme "Adwaita";;
-    "*") 
+    "*")
+
 esac
 
 swaymsg reload

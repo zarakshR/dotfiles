@@ -46,6 +46,10 @@
         "command": "workbench.action.tasks.reRunTask"
     },
     {
+        "key": "ctrl+r",
+        "command": "workbench.action.tasks.runTask"
+    },
+    {
         "key": "alt+`",
         "command": "type",
         "args": {

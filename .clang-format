@@ -6,4 +6,5 @@
     AlignAfterOpenBracket: Align,
     AlignTrailingComments: true,
     AllowShortIfStatementsOnASingleLine: WithoutElse,
+    AlignConsecutiveMacros: true,
 }
