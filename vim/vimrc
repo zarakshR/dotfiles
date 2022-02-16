@@ -7,32 +7,26 @@
 :set incsearch
 :set lazyredraw
 :set showmatch
-:set foldenable
-:set foldlevelstart=20
+:set ruler
+" test
 
 :colorscheme colors
-
-:function CommentedFileReader()
-    :hi Normal ctermbg=DarkGrey
-    :hi LineNr ctermfg=Cyan
-    :hi ColorColumn ctermbg=Yellow
-:endfunction
-
-:function CommentedFileReader_Undo()
-    :hi Normal ctermbg=None
-    :hi LineNr ctermfg=DarkBlue
-    :hi ColorColumn ctermbg=Yellow
-:endfunction
-
+"
 " Keybindings
+"
 
 " Emacs-like move to start/end of line in insert mode
-imap <C-e> <esc>$a
-imap <C-a> <esc>0i
+map <C-e> <esc>$
+map <C-a> <esc>0
+" Emacs-like delete to end (without copying to a register)
+map <C-k> "_d$
 
-" Quick exists
+" Quick exits
 map zz :q!<cr>
 map zx :wq<cr>
 
-" Delete line without copying it to a register
-map <C-k> "_dd
+" Space to quick save
+nmap <Space> :w<cr>
+
+" Shift-tab is escape in insert mode
+imap <S-TAB> <Esc>

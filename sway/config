@@ -88,7 +88,7 @@ bindsym --locked XF86HangupPhone exec mpc next
 bindsym $mod+o exec $menu -show filebrowser
 
 # Lock screen
- bindsym $mod+Shift+l exec swaylock
+ bindsym $mod+Shift+slash exec swaylock
 
 # Start a terminal
 bindsym $mod+Return exec $term
@@ -116,21 +116,26 @@ bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. 
 # Moving around:
 
 # Use $mod+[up|down|left|right]
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
-bindsym $mod++Right focus right
+bindsym $mod+Right focus right
 
-# Move the foussed window around 
+# Move the focussed window around 
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+j move right
+bindsym $mod+Shift+Right move right
+
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l right
 
 # Workspaces:
 
@@ -171,7 +176,7 @@ bindsym $mod+Shift+Tab exec swaymsg "workspace $(python /home/zaraksh/.config/sw
 
 # You can "split" the current object of your focus with
 # $mod+b or $mod+v, for horizontal and vertical splits respectively.
-bindsym $mod+h splith
+bindsym $mod+b splith
 bindsym $mod+v splitv
 
 # Switch the current container between different layout styles
