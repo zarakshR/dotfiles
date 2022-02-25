@@ -23,6 +23,8 @@ output eDP-1 pos 0 350
 for_window [app_id="proton-bridge"] floating enable, resize set 1200 800
 for_window [app_id="pavucontrol"] floating enable, resize set 1200 800
 for_window [class="Thunderbird" title="Instant messaging status"] floating enable, resize set 800 400
+for_window [class="jetbrains-idea" title="win0"] floating enable, resize set 600 400
+for_window [class="jetbrains-idea" title="Welcome to IntelliJ IDEA"] floating enable, resize set 800 600
 
 ### Variables
 
@@ -232,6 +234,7 @@ mode "resize" {
 
 bar {
     swaybar_command waybar
+
    # Fallback Bar - 
 
    # status_command while echo "$(cat /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:1a/PNP0C09:00/PNP0C0A:00/power_supply/BAT0/capacity) - $(date +'%Y-%m-%d %l:%M:%S %p';)"; do sleep 1; done
@@ -255,6 +258,6 @@ gaps inner 8
 #gaps outer 15
 
 # class        border  backgr. text    indicator child_border
-client.focused #ff0000 #ff0000 #ff0000 #AF0000   #AF0000
+client.focused #121212 #121212 #ff0000 #AF0000   #AF0000
 
 include /etc/sway/config.d/*

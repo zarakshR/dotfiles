@@ -1,14 +1,24 @@
 :filetype plugin on
 :syntax off
+" Turn tabs into spaces
 :set expandtab
 :set ts=4
+" Align wrapped lines to indent of original line
 :set breakindent
+" Highlight search
 :set hlsearch
+" Show searches as they are found
 :set incsearch
+" Do not redraw screen in between macros
 :set lazyredraw
+" Shows matching braces
 :set showmatch
+" Shows line number and file location % in bottom-right
 :set ruler
-" test
+" Nocompat
+:set nocp
+" Show commmand
+:set sc
 
 :colorscheme colors
 "

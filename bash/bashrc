@@ -16,6 +16,7 @@ alias docs='cd /home/zaraksh/Documents'
 alias svim='sudoedit'
 alias open='xdg-open'
 alias fulls='ls -lh --color=auto -a --group-directories-first'
+alias pyvi='ipython --TerminalInteractiveShell.editing_mode=vi'
 
 tmp() {
 	rand=$RANDOM
@@ -36,7 +37,34 @@ colors() {
     (x=`tput op` y=`printf %76s`;for i in {0..256};do o=00$i;echo -e ${o:${#o}-3:3} `tput setaf $i;tput setab $i`${y// /=}$x;done)
 }
 
-longps1
+strip-string() {
+    # "   string  " ---> "string"
+    : "${1#"${1%%[![:space:]]*}"}"
+    : "${_%"${_##*[![:space:]]}"}"
+    printf '%s\n' "$_"
+}
 
+split-string() {
+   # "str,ing,delim,ited" "," ---> "str\ning\ndelim\ited\n"
+   IFS=$'\n' read -d "" -ra arr <<< "${1//$2/$'\n'}"
+   printf '%s\n' "${arr[@]}"
+}
+
+lower-string() {
+    printf '%s\n' "${1,,}"
+}
+
+upper-string() {
+    # Usage: upper "string"
+    printf '%s\n' "${1^^}"
+}
+
+trim_quotes() {
+    # Usage: trim_quotes "string"
+    : "${1//\'}"
+    printf '%s\n' "${_//\"}"
+}
+
+longps1
 # This allows gpg signing for git
 export GPG_TTY=$(tty)

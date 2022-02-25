@@ -4,9 +4,9 @@
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.snippetSuggestions": "top",
     // Font
-    "editor.fontFamily": "Inconsolata SemiBold",
-    "editor.fontSize": 18,
-    // "editor.fontLigatures": false,
+    "editor.fontFamily": "JetBrains Mono SemiBold",
+    "editor.fontSize": 16,
+    "editor.fontLigatures": true,
     // Cursor
     "editor.cursorStyle": "line",
     "editor.cursorSurroundingLines": 2,
@@ -45,12 +45,20 @@
     "window.title": "${dirty}${activeEditorShort}",
     "window.menuBarVisibility": "toggle",
     "workbench.editor.highlightModifiedTabs": true,
-    "workbench.startupEditor": "welcomePageInEmptyWorkbench",
     // ---
     // LANGUAGE SPECIFIC CONFIGURATION ---
     "[python]": {
         "editor.bracketPairColorization.enabled": true,
         "editor.defaultFormatter": "ms-python.python",
+    },
+    "[scala]": {
+        "editor.suggestSelection": "recentlyUsed",
+        "editor.formatOnPaste": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            120
+        ],
+        "editor.wordWrapColumn": 120
     },
     "[shellscript]": {
         "editor.rulers": [],
@@ -70,6 +78,8 @@
     "hexeditor.columnWidth": 16,
     "hexeditor.showDecodedText": true,
     "hexeditor.dataInspector.autoReveal": false,
+    // Metals
+    "metals.scalafmtConfigPath": "/home/zaraksh/Documents/Code/.scalafmt.conf",
     // ---
     // APPEARANCE ---
     "git.decorations.enabled": false,
@@ -107,12 +117,12 @@
         },
         // Dark theme
         "[Default Dark+]": {
-            "editor.background": "#000000",
+            "editor.background": "#0a0a0a",
             "editor.foreground": "#f5f5f5",
-            "sideBar.background": "#0a0a0a",
+            "sideBar.background": "#171717",
             "sideBar.foreground": "#eaeaea",
             "sideBarSectionHeader.foreground": "#407490",
-            "activityBar.background": "#121212",
+            "activityBar.background": "#222222",
             "activityBar.foreground": "#0091FF",
             "panel.background": "#0a0a0a",
             "statusBar.background": "#002440",
@@ -159,12 +169,18 @@
         }
     },
     "editor.renderWhitespace": "none",
-    "window.zoomLevel": -0.7,
     "python.formatting.provider": "black",
     "python.formatting.blackArgs": [
         "--line-length=80"
     ],
     "python.analysis.completeFunctionParens": true,
     "workbench.iconTheme": "material-icon-theme",
+    "files.watcherExclude": {
+        "**/.bloop": true,
+        "**/.metals": true,
+        "**/.ammonite": true
+    },
+    "window.zoomLevel": -0.7,
     "workbench.colorTheme": "Default Light+",
+    "metals.enableIndentOnPaste": true,
 }
