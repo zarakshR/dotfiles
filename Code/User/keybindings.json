@@ -54,7 +54,7 @@
         "command": "type",
         "args": {
             "text": "`"
-        }
+        },
     },
     {
         "key": "ctrl+shift+t",

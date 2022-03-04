@@ -1,8 +1,9 @@
 {
     // EDITOR ---
     "editor.guides.bracketPairs": true,
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.snippetSuggestions": "top",
+    "editor.suggestSelection": "recentlyUsed",
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
     // Font
     "editor.fontFamily": "JetBrains Mono SemiBold",
     "editor.fontSize": 16,
@@ -18,8 +19,6 @@
     ],
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 80,
-    // Formatting
-    "editor.formatOnSave": true,
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
     // Zen mode
@@ -52,19 +51,19 @@
         "editor.defaultFormatter": "ms-python.python",
     },
     "[scala]": {
-        "editor.suggestSelection": "recentlyUsed",
-        "editor.formatOnPaste": true,
-        "editor.formatOnType": true,
         "editor.rulers": [
-            120
+            100
         ],
-        "editor.wordWrapColumn": 120
+        "editor.wordWrapColumn": 100
     },
-    "[shellscript]": {
-        "editor.rulers": [],
-        "editor.wordWrapColumn": 120
+    "[racket]": {
+        "editor.bracketPairColorization.enabled": true,
+        "editor.wordSeparators": "()[]{}\",'`;#|",
+        "editor.rulers": [
+            80
+        ],
     },
-    // Filetype-editor associations
+    // Filetype-Editor associations
     "workbench.editorAssociations": {
         "*.wav": "hexEditor.hexedit"
     },
@@ -168,19 +167,18 @@
             "strings": "#a3be8c",
         }
     },
-    "editor.renderWhitespace": "none",
     "python.formatting.provider": "black",
     "python.formatting.blackArgs": [
         "--line-length=80"
     ],
     "python.analysis.completeFunctionParens": true,
-    "workbench.iconTheme": "material-icon-theme",
     "files.watcherExclude": {
         "**/.bloop": true,
         "**/.metals": true,
         "**/.ammonite": true
     },
-    "window.zoomLevel": -0.7,
-    "workbench.colorTheme": "Default Light+",
     "metals.enableIndentOnPaste": true,
+    "workbench.colorTheme": "Default Light+",
+    "workbench.iconTheme": "material-icon-theme",
+    "window.zoomLevel": -1,
 }

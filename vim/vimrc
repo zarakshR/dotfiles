@@ -1,5 +1,7 @@
+" Filetype plugin
 :filetype plugin on
-:syntax off
+" Syntax highlighting
+:syntax on
 " Turn tabs into spaces
 :set expandtab
 :set ts=4
@@ -9,18 +11,21 @@
 :set hlsearch
 " Show searches as they are found
 :set incsearch
-" Do not redraw screen in between macros
+" Do not redraw screen in between macro invocations
 :set lazyredraw
 " Shows matching braces
 :set showmatch
 " Shows line number and file location % in bottom-right
 :set ruler
-" Nocompat
+" Disable vi-compatibility mode
 :set nocp
 " Show commmand
 :set sc
+" Do not wrap in the middle of a word
+:set linebreak
 
-:colorscheme colors
+:colorscheme zellner
+
 "
 " Keybindings
 "
@@ -37,6 +42,9 @@ map zx :wq<cr>
 
 " Space to quick save
 nmap <Space> :w<cr>
+
+" Tab to enter insert mode
+map <TAB> i
 
 " Shift-tab is escape in insert mode
 imap <S-TAB> <Esc>
