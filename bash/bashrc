@@ -20,9 +20,14 @@ alias pyvi='ipython --TerminalInteractiveShell.editing_mode=vi'
 
 tmp() {
 	rand=$RANDOM
-	mkdir /tmp/$rand-mktmp
-	ln -s /tmp/$rand-mktmp .
-    cd ./$rand-mktmp
+    dirname=tmp-$rand
+	mkdir /tmp/$dirname
+	ln -s /tmp/$dirname
+    cd ./$dirname
+}
+
+clrtmp() {
+    rm $HOME/tmp-*
 }
 
 shortps1() {
@@ -30,7 +35,7 @@ shortps1() {
 }
 
 longps1() {
-    PS1='[\u@\h \w]$(__git_ps1 "  (%s)")_ '
+    PS1='[\u@\h \w]$(__git_ps1 "  (%s)")$ '
 }
 
 colors() {

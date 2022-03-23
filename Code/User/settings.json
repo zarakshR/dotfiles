@@ -35,11 +35,12 @@
     "files.trimTrailingWhitespace": true,
     "explorer.confirmDelete": true,
     // TERMINAL ---
-    "terminal.integrated.fontFamily": "Inconsolata SemiBold",
+    "terminal.integrated.fontFamily": "Jetbrains Mono",
     "terminal.integrated.fontSize": 16,
     "terminal.integrated.allowChords": false,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.tabs.enabled": true,
+    "terminal.integrated.shellIntegration.enabled": true,
     // WINDOW & WORKBENCH ---
     "window.title": "${dirty}${activeEditorShort}",
     "window.menuBarVisibility": "toggle",
@@ -52,9 +53,9 @@
     },
     "[scala]": {
         "editor.rulers": [
-            100
+            120
         ],
-        "editor.wordWrapColumn": 100
+        "editor.wordWrapColumn": 120
     },
     "[racket]": {
         "editor.bracketPairColorization.enabled": true,
