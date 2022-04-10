@@ -11,16 +11,16 @@
 ## alternative location to config file which defines that while launching
 ## ncmpcpp.
 ##
-#
+
 ncmpcpp_directory = ~/.config/ncmpcpp
-#
+
 ##
 ## Directory for storing downloaded lyrics. It defaults to ~/.lyrics since other
 ## MPD clients (eg. ncmpc) also use that location.
 ##
-#
+
 lyrics_directory = ~/.config/ncmpcpp/.lyrics
-#
+
 ##### connection settings #####
 #
 #mpd_host = localhost
@@ -30,9 +30,9 @@ lyrics_directory = ~/.config/ncmpcpp/.lyrics
 #mpd_connection_timeout = 5
 #
 ## Needed for tag editor and file operations to work.
-##
+
 mpd_music_dir = ~/Music
-#
+
 #mpd_crossfade_time = 5
 #
 # Exclude pattern for random song action
@@ -68,22 +68,22 @@ mpd_music_dir = ~/Music
 ## will make localhost:5555 available as a source of data for the stereo
 ## visualizer.
 ##
-#
+
 visualizer_data_source = /tmp/mpd.fifo
-#
+
 ##
 ## Note: Below parameter is needed for ncmpcpp to determine which output
 ## provides data for visualizer and reset it at the beginning of visualization
 ## to synchronize with audio.
 ##
-#
+
 visualizer_output_name = "fifo_viz"
-#
+
 ##
 ## If you set format to 44100:16:2, make it 'yes'.
-##
+
 visualizer_in_stereo = yes
-#
+
 ##
 ## Note: set below to >=10 only if you have synchronization issues with
 ## visualization and audio.
@@ -97,15 +97,15 @@ visualizer_in_stereo = yes
 ##
 #
 ## Available values: spectrum, wave, wave_filled, ellipse.
-##
+
 visualizer_type = spectrum
-#
+
 #visualizer_fps = 60
 #
 #visualizer_autoscale = no
-#
+
 visualizer_look = ●▮
-#
+
 #visualizer_color = blue, cyan, green, yellow, magenta, red
 #
 ## Alternative subset of 256 colors for terminals that support it.
@@ -577,8 +577,3 @@ song_library_format = {%t}|{%f}
 
 song_columns_list_format = (3f)[]{N} (15)[]{a} (60)[]{t|f:Title} (15)[]{b} (7f)[]{l}
 song_list_format = {%a - }{%t}|{$2%f$9}$R{$5%l$9}
-
-# Key bindings
-
-def_key "d"
-    delete_playlist_items
