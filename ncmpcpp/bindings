@@ -521,31 +521,31 @@
 #
 
 def_key "k"
-scroll_up
+  scroll_up
 
 def_key "j"
-scroll_down
+  scroll_down
 
 def_key "space"
-play_item
+  play_item
 
 def_key "d"
-delete_playlist_items
+  delete_playlist_items
 
 def_key "d"
-delete_browser_items
+  delete_browser_items
 
 def_key "d"
-delete_stored_playlist
+  delete_stored_playlist
 
 def_key "l"
-next_column
+  next_column
 
 def_key "h"
-previous_column
+  previous_column
 
 def_key "L"
-show_lyrics
+  show_lyrics
 
 def_key "a"
-add_item_to_playlist
+  add_item_to_playlist

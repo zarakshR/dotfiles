@@ -5,7 +5,7 @@ ROFI_DIR="/home/zaraksh/.config/rofi"
 VSCODE_DIR="/home/zaraksh/.config/Code/User"
 VIM_DIR="/home/zaraksh"
 
-COLOUR_BLACK="#0A0A0A"
+COLOUR_BLACK="#121212"
 COLOUR_WHITE="#F5F5F5"
 
 if [ -z $1 ]

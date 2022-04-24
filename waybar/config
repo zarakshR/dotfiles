@@ -9,7 +9,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces"],
     "modules-center": ["mpd"],
-    "modules-right": ["pulseaudio", "backlight", "network", "cpu", "disk", "memory", "temperature", "battery", "clock", "idle_inhibitor"],
+    "modules-right": ["pulseaudio", "backlight", "network", "temperature", "cpu", "disk", "memory", "battery", "clock", "idle_inhibitor"],
 
     // Modules configuration
     "sway/workspaces": {

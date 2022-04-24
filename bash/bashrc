@@ -17,6 +17,8 @@ alias svim='sudoedit'
 alias open='xdg-open'
 alias fulls='ls -lh --color=auto -a --group-directories-first'
 alias pyvi='ipython --TerminalInteractiveShell.editing_mode=vi'
+alias hosts='cat /etc/hosts | grep "#0.0.0.0"'
+
 
 tmp() {
 	rand=$RANDOM
@@ -40,6 +42,18 @@ longps1() {
 
 colors() {
     (x=`tput op` y=`printf %76s`;for i in {0..256};do o=00$i;echo -e ${o:${#o}-3:3} `tput setaf $i;tput setab $i`${y// /=}$x;done)
+}
+
+pages() {
+    if [ $1 == $4 ]; then
+        echo "WARNING: Input filename and output filename are the same. Replacing original file. Continue? [y/n]"
+        read choice
+        if [ $choice == 'y' ]; then
+            qpdf $1 --pages $1 $2-$3 -- --replace-input
+        fi
+    else
+        qpdf $1 --pages $1 $2-$3 -- $4
+    fi
 }
 
 longps1

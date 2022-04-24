@@ -179,7 +179,7 @@
         "**/.ammonite": true
     },
     "metals.enableIndentOnPaste": true,
-    "workbench.colorTheme": "Default Dark+",
+    "workbench.colorTheme": "Default Light+",
     "workbench.iconTheme": "material-icon-theme",
     "window.zoomLevel": -1,
 }
