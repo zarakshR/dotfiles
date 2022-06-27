@@ -17,7 +17,7 @@ alias svim='sudoedit'
 alias open='xdg-open'
 alias fulls='ls -lh --color=auto -a --group-directories-first'
 alias pyvi='ipython --TerminalInteractiveShell.editing_mode=vi'
-alias hosts='cat /etc/hosts | grep "#0.0.0.0"'
+alias hosts='cat /etc/hosts | grep "#\s*0.0.0.0"'
 
 
 tmp() {
